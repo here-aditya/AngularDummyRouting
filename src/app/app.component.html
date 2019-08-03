@@ -1,0 +1,8 @@
+<header-guest *ngIf="this.router.url !== '/manageprofile'"></header-guest>
+<header-user *ngIf="this.router.url == '/manageprofile'"></header-user>
+
+<article *ngIf="this.router.url != '/manageprofile'">
+  <div style="background:khaki; min-height: 200px; margin: 20px; padding: 10px">
+  <router-outlet></router-outlet>
+  </div>
+</article>
